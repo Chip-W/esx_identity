@@ -40,90 +40,269 @@ function getCharacters(source, callback)
 	{
 		['@identifier'] = identifier
 	}, function(result)
-		if result[1] and result[2] and result[3] then
-			local data = {
-				identifier		= result[1].identifier,
-				firstname1		= result[1].firstname,
-				lastname1		= result[1].lastname,
-				dateofbirth1	= result[1].dateofbirth,
-				sex1			= result[1].sex,
-				height1			= result[1].height,
-				firstname2		= result[2].firstname,
-				lastname2		= result[2].lastname,
-				dateofbirth2	= result[2].dateofbirth,
-				sex2			= result[2].sex,
-				height2			= result[2].height,
-				firstname3		= result[3].firstname,
-				lastname3		= result[3].lastname,
-				dateofbirth3	= result[3].dateofbirth,
-				sex3			= result[3].sex,
-				height3			= result[3].height
-			}
+		if result[1] and result[2] and result[3] and result[4] and result[5] and result[6] then
+	
+      local data = {
+        identifier    = result[1]['identifier'],
+        firstname1    = result[1]['firstname'],
+        lastname1     = result[1]['lastname'],
+        dateofbirth1  = result[1]['dateofbirth'],
+        sex1          = result[1]['sex'],
+        height1       = result[1]['height'],
+        firstname2    = result[2]['firstname'],
+        lastname2     = result[2]['lastname'],
+        dateofbirth2  = result[2]['dateofbirth'],
+        sex2          = result[2]['sex'],
+        height2       = result[2]['height'],
+        firstname3    = result[3]['firstname'],
+        lastname3     = result[3]['lastname'],
+        dateofbirth3  = result[3]['dateofbirth'],
+        sex3          = result[3]['sex'],
+        height3       = result[3]['height'],
+        identifier    = result[4]['identifier'],
+        firstname4    = result[4]['firstname'],
+        lastname4     = result[4]['lastname'],
+        dateofbirth4  = result[4]['dateofbirth'],
+        sex4          = result[4]['sex'],
+        height4       = result[4]['height'],
+        firstname5    = result[5]['firstname'],
+        lastname5     = result[5]['lastname'],
+        dateofbirth5  = result[5]['dateofbirth'],
+        sex5          = result[5]['sex'],
+        height5       = result[5]['height'],
+        firstname6    = result[6]['firstname'],
+        lastname6     = result[6]['lastname'],
+        dateofbirth6  = result[6]['dateofbirth'],
+        sex6          = result[6]['sex'],
+        height6       = result[6]['height']
+      }
 			
 			callback(data)
-		elseif result[1] and result[2] and not result[3] then
-			local data = {
-				identifier		= result[1].identifier,
-				firstname1		= result[1].firstname,
-				lastname1		= result[1].lastname,
-				dateofbirth1	= result[1].dateofbirth,
-				sex1			= result[1].sex,
-				height1			= result[1].height,
-				firstname2		= result[2].firstname,
-				lastname2		= result[2].lastname,
-				dateofbirth2	= result[2].dateofbirth,
-				sex2			= result[2].sex,
-				height2			= result[2].height,
-				firstname3		= '',
-				lastname3		= '',
-				dateofbirth3	= '',
-				sex3			= '',
-				height3			= ''
-			}
+		elseif result[1] and result[2] and result[3] and result[4] and result[5] and not result[6] then
+	
+      local data = {
+        identifier    = result[1]['identifier'],
+        firstname1    = result[1]['firstname'],
+        lastname1     = result[1]['lastname'],
+        dateofbirth1  = result[1]['dateofbirth'],
+        sex1          = result[1]['sex'],
+        height1       = result[1]['height'],
+        firstname2    = result[2]['firstname'],
+        lastname2     = result[2]['lastname'],
+        dateofbirth2  = result[2]['dateofbirth'],
+        sex2          = result[2]['sex'],
+        height2       = result[2]['height'],
+        firstname3    = result[3]['firstname'],
+        lastname3     = result[3]['lastname'],
+        dateofbirth3  = result[3]['dateofbirth'],
+        sex3          = result[3]['sex'],
+        height3       = result[3]['height'],
+        firstname4    = result[4]['firstname'],
+        lastname4     = result[4]['lastname'],
+        dateofbirth4  = result[4]['dateofbirth'],
+        sex4          = result[4]['sex'],
+        height4       = result[4]['height'],
+        firstname5    = result[5]['firstname'],
+        lastname5     = result[5]['lastname'],
+        dateofbirth5  = result[5]['dateofbirth'],
+        sex5          = result[5]['sex'],
+        height5       = result[5]['height'],
+        firstname6    = '',
+        lastname6     = '',
+        dateofbirth6  = '',
+        sex6          = '',
+        height6       = ''
+      }
 
 			callback(data)
-		elseif result[1] and not result[2] and not result[3] then
-			local data = {
-				identifier		= result[1].identifier,
-				firstname1		= result[1].firstname,
-				lastname1		= result[1].lastname,
-				dateofbirth1	= result[1].dateofbirth,
-				sex1			= result[1].sex,
-				height1			= result[1].height,
-				firstname2		= '',
-				lastname2		= '',
-				dateofbirth2	= '',
-				sex2			= '',
-				height2			= '',
-				firstname3		= '',
-				lastname3		= '',
-				dateofbirth3	= '',
-				sex3			= '',
-				height3			= ''
-			}
+		elseif result[1] and result[2] and result[3] and result[4] and not result[5] and not result[6] then
+	
+      local data = {
+        identifier    = result[1]['identifier'],
+        firstname1    = result[1]['firstname'],
+        lastname1     = result[1]['lastname'],
+        dateofbirth1  = result[1]['dateofbirth'],
+        sex1          = result[1]['sex'],
+        height1       = result[1]['height'],
+        firstname2    = result[2]['firstname'],
+        lastname2     = result[2]['lastname'],
+        dateofbirth2  = result[2]['dateofbirth'],
+        sex2          = result[2]['sex'],
+        height2       = result[2]['height'],
+        firstname3    = result[3]['firstname'],
+        lastname3     = result[3]['lastname'],
+        dateofbirth3  = result[3]['dateofbirth'],
+        sex3          = result[3]['sex'],
+        height3       = result[3]['height'],
+        firstname4    = result[4]['firstname'],
+        lastname4     = result[4]['lastname'],
+        dateofbirth4  = result[4]['dateofbirth'],
+        sex4          = result[4]['sex'],
+        height4       = result[4]['height'],
+        firstname5    = '',
+        lastname5     = '',
+        dateofbirth5  = '',
+        sex5          = '',
+        height5       = '',
+        firstname6    = '',
+        lastname6     = '',
+        dateofbirth6  = '',
+        sex6          = '',
+        height6       = ''
+      }
 
 			callback(data)
-		else
-			local data = {
-				identifier		= '',
-				firstname1		= '',
-				lastname1		= '',
-				dateofbirth1	= '',
-				sex1			= '',
-				height1			= '',
-				firstname2		= '',
-				lastname2		= '',
-				dateofbirth2	= '',
-				sex2			= '',
-				height2			= '',
-				firstname3		= '',
-				lastname3		= '',
-				dateofbirth3	= '',
-				sex3			= '',
-				height3			= ''
-			}
+		elseif result[1] and result[2] and result[3] and not result[4] and not result[5] and not result[6] then
+  
+      local data = {
+        identifier    = result[1]['identifier'],
+        firstname1    = result[1]['firstname'],
+        lastname1     = result[1]['lastname'],
+        dateofbirth1  = result[1]['dateofbirth'],
+        sex1          = result[1]['sex'],
+        height1       = result[1]['height'],
+        firstname2    = result[2]['firstname'],
+        lastname2     = result[2]['lastname'],
+        dateofbirth2  = result[2]['dateofbirth'],
+        sex2          = result[2]['sex'],
+        height2       = result[2]['height'],
+        firstname3    = result[3]['firstname'],
+        lastname3     = result[3]['lastname'],
+        dateofbirth3  = result[3]['dateofbirth'],
+        sex3          = result[3]['sex'],
+        height3       = result[3]['height'],
+        firstname4    = '',
+        lastname4     = '',
+        dateofbirth4  = '',
+        sex4          = '',
+        height4       = '',
+        firstname5    = '',
+        lastname5     = '',
+        dateofbirth5  = '',
+        sex5          = '',
+        height5       = '',
+        firstname6    = '',
+        lastname6     = '',
+        dateofbirth6  = '',
+        sex6          = '',
+        height6       = ''
+      }
 
-			callback(data)
+      callback(data)
+    
+    elseif result[1] and result[2] and not result[3] and not result[4] and not result[5] and not result[6] then
+  
+      local data = {
+        identifier    = result[1]['identifier'],
+        firstname1    = result[1]['firstname'],
+        lastname1     = result[1]['lastname'],
+        dateofbirth1  = result[1]['dateofbirth'],
+        sex1          = result[1]['sex'],
+        height1       = result[1]['height'],
+        firstname2    = result[2]['firstname'],
+        lastname2     = result[2]['lastname'],
+        dateofbirth2  = result[2]['dateofbirth'],
+        sex2          = result[2]['sex'],
+        height2       = result[2]['height'],
+        firstname3    = '',
+        lastname3     = '',
+        dateofbirth3  = '',
+        sex3          = '',
+        height3       = '',
+        firstname4    = '',
+        lastname4     = '',
+        dateofbirth4  = '',
+        sex4          = '',
+        height4       = '',
+        firstname5    = '',
+        lastname5     = '',
+        dateofbirth5  = '',
+        sex5          = '',
+        height5       = '',
+        firstname6    = '',
+        lastname6     = '',
+        dateofbirth6  = '',
+        sex6          = '',
+        height6       = ''
+      }
+
+      callback(data)
+    
+    elseif result[1] and not result[2] and not result[3] and not result[4] and not result[5] and not result[6] then
+  
+      local data = {
+        identifier    = result[1]['identifier'],
+        firstname1    = result[1]['firstname'],
+        lastname1     = result[1]['lastname'],
+        dateofbirth1  = result[1]['dateofbirth'],
+        sex1          = result[1]['sex'],
+        height1       = result[1]['height'],
+        firstname2    = '',
+        lastname2     = '',
+        dateofbirth2  = '',
+        sex2          = '',
+        height2       = '',
+        firstname3    = '',
+        lastname3     = '',
+        dateofbirth3  = '',
+        sex3          = '',
+        height3       = '',
+        firstname4    = '',
+        lastname4     = '',
+        dateofbirth4  = '',
+        sex4          = '',
+        height4       = '',
+        firstname5    = '',
+        lastname5     = '',
+        dateofbirth5  = '',
+        sex5          = '',
+        height5       = '',
+        firstname6    = '',
+        lastname6     = '',
+        dateofbirth6  = '',
+        sex6          = '',
+        height6       = ''
+      }
+
+      callback(data)
+	  
+    else
+	
+      local data = {
+        identifier    = '',
+        firstname1    = '',
+        lastname1     = '',
+        dateofbirth1  = '',
+        sex1          = '',
+        height1       = '',
+        firstname2    = '',
+        lastname2     = '',
+        dateofbirth2  = '',
+        sex2          = '',
+        height2       = '',
+        firstname3    = '',
+        lastname3     = '',
+        dateofbirth3  = '',
+        sex3          = '',
+        height3       = '',
+        firstname4    = '',
+        lastname4     = '',
+        dateofbirth4  = '',
+        sex4          = '',
+        height4       = '',
+        firstname5    = '',
+        lastname5     = '',
+        dateofbirth5  = '',
+        sex5          = '',
+        height5       = '',
+        firstname6    = '',
+        lastname6     = '',
+        dateofbirth6  = '',
+        sex6          = '',
+        height6       = ''
+      }
+
+      callback(data)
 		end
 	end)
 end
@@ -247,7 +426,7 @@ end)
 TriggerEvent('es:addCommand', 'register', function(source, args, user)
 	getCharacters(source, function(data)
 		if data.firstname3 ~= '' then
-			TriggerClientEvent('chat:addMessage', source, { args = { '^[IDENTITY]', 'You can only have 3 registered characters. Use the ^3/chardel^0  command in order to delete existing characters.' } })
+			TriggerClientEvent('chat:addMessage', source, { args = { '^[IDENTITY]', 'You can only have 6 registered characters. Use the ^3/chardel^0  command in order to delete existing characters.' } })
 		else
 			TriggerClientEvent('esx_identity:showRegisterIdentity', source, {})
 		end
@@ -276,6 +455,18 @@ TriggerEvent('es:addGroupCommand', 'charlist', 'user', function(source, args, us
 				
 				if data.firstname3 ~= '' then
 					TriggerClientEvent('chat:addMessage', source, { args = { '^1[IDENTITY] Character 3:', data.firstname3 .. ' ' .. data.lastname3 } })
+
+					if data.firstname4 ~= '' then
+            			TriggerClientEvent('chat:addMessage', source, { args = { '^1[IDENTITY] Character 4:', data.firstname2 .. ' ' .. data.lastname4 } })
+
+            			if data.firstname5 ~= '' then
+              				TriggerClientEvent('chat:addMessage', source, { args = { '^1[IDENTITY] Character 5:', data.firstname2 .. ' ' .. data.lastname5 } })
+
+              				if data.firstname6 ~= '' then
+                 				TriggerClientEvent('chat:addMessage', source, { args = { '^1[IDENTITY] Character 6:', data.firstname2 .. ' ' .. data.lastname6 } })
+							end
+						end
+					end
 				end
 			end
 		else
@@ -289,7 +480,7 @@ end, {help = "List all your registered characters"})
 TriggerEvent('es:addGroupCommand', 'charselect', 'user', function(source, args, user)
 	local charNumber = tonumber(args[1])
 
-	if charNumber == nil or charNumber > 3 or charNumber < 1 then
+	if charNumber == nil or charNumber > 6 or charNumber < 1 then
 		TriggerClientEvent('chat:addMessage', source, { args = { '^[IDENTITY]', 'That\'s an invalid character!' } })
 		return
 	end
@@ -361,6 +552,75 @@ TriggerEvent('es:addGroupCommand', 'charselect', 'user', function(source, args, 
 			else
 				TriggerClientEvent('chat:addMessage', source, { args = { '^1[IDENTITY]', 'You don\'t have a character in slot 3!' } })
 			end
+
+		elseif charNumber == 4 then
+	
+			local data = {
+				identifier	= data.identifier,
+				firstname	= data.firstname4,
+				lastname	= data.lastname4,
+				dateofbirth	= data.dateofbirth4,
+				sex			= data.sex4,
+				height		= data.height4
+			}
+
+			if data.firstname ~= '' then
+				updateIdentity(GetPlayerIdentifiers(source)[1], data, function(callback)
+					if callback then
+						TriggerClientEvent('chat:addMessage', source, { args = { '^1[IDENTITY]', 'Updated your active character to ^2' .. data.firstname .. ' ' .. data.lastname } })
+					else
+						TriggerClientEvent('chat:addMessage', source, { args = { '^1[IDENTITY]', 'Failed to update your identity, try again later or contact the server admin!' } })
+					end
+				end)
+			else
+				TriggerClientEvent('chat:addMessage', source, { args = { '^1[IDENTITY]', 'You don\'t have a character in slot 4!' } })
+			end
+		elseif charNumber == 5 then
+	
+			local data = {
+				identifier	= data.identifier,
+				firstname	= data.firstname5,
+				lastname	= data.lastname5,
+				dateofbirth	= data.dateofbirth5,
+				sex			= data.sex5,
+				height		= data.height5
+			}
+
+			if data.firstname ~= '' then
+				updateIdentity(GetPlayerIdentifiers(source)[1], data, function(callback)
+					if callback then
+						TriggerClientEvent('chat:addMessage', source, { args = { '^1[IDENTITY]', 'Updated your active character to ^2' .. data.firstname .. ' ' .. data.lastname } })
+					else
+						TriggerClientEvent('chat:addMessage', source, { args = { '^1[IDENTITY]', 'Failed to update your identity, try again later or contact the server admin!' } })
+					end
+				end)
+			else
+				TriggerClientEvent('chat:addMessage', source, { args = { '^1[IDENTITY]', 'You don\'t have a character in slot 5!' } })
+			end
+		elseif charNumber == 6 then
+	
+			local data = {
+				identifier	= data.identifier,
+				firstname	= data.firstname6,
+				lastname	= data.lastname6,
+				dateofbirth	= data.dateofbirth6,
+				sex			= data.sex6,
+				height		= data.height6
+			}
+
+			if data.firstname ~= '' then
+				updateIdentity(GetPlayerIdentifiers(source)[1], data, function(callback)
+					if callback then
+						TriggerClientEvent('chat:addMessage', source, { args = { '^1[IDENTITY]', 'Updated your active character to ^2' .. data.firstname .. ' ' .. data.lastname } })
+					else
+						TriggerClientEvent('chat:addMessage', source, { args = { '^1[IDENTITY]', 'Failed to update your identity, try again later or contact the server admin!' } })
+					end
+				end)
+			else
+				TriggerClientEvent('chat:addMessage', source, { args = { '^1[IDENTITY]', 'You don\'t have a character in slot 6!' } })
+			end
+
+		
 		else
 			TriggerClientEvent('chat:addMessage', source, { args = { '^1[IDENTITY]', 'Failed to update your identity, try again later or contact the server admin!' } })
 		end
@@ -368,12 +628,12 @@ TriggerEvent('es:addGroupCommand', 'charselect', 'user', function(source, args, 
 	end)
 end, function(source, args, user)
 	TriggerClientEvent('chat:addMessage', source, { args = { '^1SYSTEM', 'Insufficient permissions!' } })
-end, {help = "Switch between character", params = {{name = "char", help = "the character id, ranges from 1-3"}}})
+end, {help = "Switch between character", params = {{name = "char", help = "the character id, ranges from 1-6"}}})
 
 TriggerEvent('es:addGroupCommand', 'chardel', 'user', function(source, args, user)
 	local charNumber = tonumber(args[1])
 
-	if charNumber == nil or charNumber > 3 or charNumber < 1 then
+	if charNumber == nil or charNumber > 6 or charNumber < 1 then
 		TriggerClientEvent('chat:addMessage', source, { args = { '^[IDENTITY]', 'That\'s an invalid character!' } })
 		return
 	end
@@ -448,10 +708,78 @@ TriggerEvent('es:addGroupCommand', 'chardel', 'user', function(source, args, use
 			else
 				TriggerClientEvent('chat:addMessage', source, { args = { '^1[IDENTITY]', 'You don\'t have a character in slot 3!' } })
 			end
+		elseif charNumber == 4 then
+	
+			local data = {
+				identifier	= data.identifier,
+				firstname	= data.firstname4,
+				lastname	= data.lastname4,
+				dateofbirth	= data.dateofbirth4,
+				sex			= data.sex4,
+				height		= data.height4
+			}
+			
+			if data.firstname ~= '' then
+				deleteIdentity(GetPlayerIdentifiers(source)[1], data, function(callback)
+					if callback then
+						TriggerClientEvent('chat:addMessage', source, { args = { '^1[IDENTITY]', 'You have deleted ^1' .. data.firstname .. ' ' .. data.lastname } })
+					else
+						TriggerClientEvent('chat:addMessage', source, { args = { '^1[IDENTITY]', 'Failed to delete the character, try again later or contact the server admin!' } })
+					end
+				end)
+			else
+				TriggerClientEvent('chat:addMessage', source, { args = { '^1[IDENTITY]', 'You don\'t have a character in slot 4!' } })
+			end
+		elseif charNumber == 5 then
+	
+			local data = {
+				identifier	= data.identifier,
+				firstname	= data.firstname5,
+				lastname	= data.lastname5,
+				dateofbirth	= data.dateofbirth5,
+				sex			= data.sex5,
+				height		= data.height5
+			}
+			
+			if data.firstname ~= '' then
+				deleteIdentity(GetPlayerIdentifiers(source)[1], data, function(callback)
+					if callback then
+						TriggerClientEvent('chat:addMessage', source, { args = { '^1[IDENTITY]', 'You have deleted ^1' .. data.firstname .. ' ' .. data.lastname } })
+					else
+						TriggerClientEvent('chat:addMessage', source, { args = { '^1[IDENTITY]', 'Failed to delete the character, try again later or contact the server admin!' } })
+					end
+				end)
+			else
+				TriggerClientEvent('chat:addMessage', source, { args = { '^1[IDENTITY]', 'You don\'t have a character in slot 5!' } })
+			end
+		elseif charNumber == 6 then
+	
+			local data = {
+				identifier	= data.identifier,
+				firstname	= data.firstname6,
+				lastname	= data.lastname6,
+				dateofbirth	= data.dateofbirth6,
+				sex			= data.sex6,
+				height		= data.height6
+			}
+			
+			if data.firstname ~= '' then
+				deleteIdentity(GetPlayerIdentifiers(source)[1], data, function(callback)
+					if callback then
+						TriggerClientEvent('chat:addMessage', source, { args = { '^1[IDENTITY]', 'You have deleted ^1' .. data.firstname .. ' ' .. data.lastname } })
+					else
+						TriggerClientEvent('chat:addMessage', source, { args = { '^1[IDENTITY]', 'Failed to delete the character, try again later or contact the server admin!' } })
+					end
+				end)
+			else
+				TriggerClientEvent('chat:addMessage', source, { args = { '^1[IDENTITY]', 'You don\'t have a character in slot 6!' } })
+			end
+
+
 		else
 			TriggerClientEvent('chat:addMessage', source, { args = { '^1[IDENTITY]', 'Failed to delete the character, try again!' } })
 		end
 	end)
 end, function(source, args, user)
 	TriggerClientEvent('chat:addMessage', source, { args = { '^1SYSTEM', 'Insufficient permissions!' } })
-end, {help = "Delete a registered character", params = {{name = "char", help = "the character id, ranges from 1-3"}}})
+end, {help = "Delete a registered character", params = {{name = "char", help = "the character id, ranges from 1-6"}}})
