@@ -62,7 +62,7 @@ RegisterNUICallback('register', function(data, cb)
 		elseif theData == "height" then
 			local height = tonumber(value)
 			if height then
-				if height > 200 or height < 140 then
+				if height > 80 or height < 50 then
 					reason = "Unacceptable player height!"
 					break
 				end
